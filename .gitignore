@@ -1,1 +1,4 @@
 .idea/
+personalized_emails/
+__pycache__/
+excel/
