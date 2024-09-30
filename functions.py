@@ -11,7 +11,7 @@ def get_loyal_customers(df: pd.DataFrame) -> pd.DataFrame:
     :return: A filtered dataframe containing the new customers
     """
     age_condition = (df['age'] >= 27) & (df['age'] <= 35)
-    loyalty_condition = (df['loyalty_score'] >= 6.5)
+    loyalty_condition = (df['loyalty_score'] > 6.5)
     return df[(age_condition & loyalty_condition)]
 
 
